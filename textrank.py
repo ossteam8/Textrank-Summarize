@@ -23,6 +23,10 @@ class TextRank:
         return sim_mat
 
     
+
+
+
+
     def word_graph(corp_doc_topic = corp_doc_topic,min_count=5,min_sim=0.3,tokenizer="mecab",noun=True,):
 
         mat, vocab_idx, idx_vocab = vectorize_sents(
@@ -32,6 +36,8 @@ class TextRank:
         mat = word_similarity_matrix(mat, min_sim=min_sim)
         return mat, vocab_idx, idx_vocab
     
+
+
     
     def pagerank(x: np.ndarray, df=0.85, max_iter=50):
 
@@ -46,3 +52,20 @@ class TextRank:
         
 
         return R
+
+
+
+    def keyword_extraxtor(corp_doc_topic):
+        
+        keywords = []
+        for i in range(len(corp_doc_topic)):
+            if len(corp_doc_topic[i])!= 0:
+                mat,vocab_idx, idx_vocab = word_graph(corp_doc_topic[i])
+                R = pagerank(mat)
+                topk = 10
+                idxs = R.argsort()[-topk:]
+                keywords.append([(idx, R[idx], idx_vocab[idx]) for idx in reversed(idxs)])
+                #keyword = [(R[idx]) for idx in reversed(idxs)]
+        
+        return keywords
+    
