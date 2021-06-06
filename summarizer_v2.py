@@ -1,51 +1,8 @@
 # -*- coding: cp949 -*- 
 import platform
-from collections import Counter
 import kss
 import numpy as np
 from functools import partial
-import numpy as np
-from sklearn.preprocessing import normalize
-
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.metrics import pairwise_distances
-
-# tokenizer import
-from konlpy.tag import Okt, Komoran, Hannanum, Kkma
-
-if platform.system() == "Windows":
-    try:
-        from eunjeon import Mecab
-    except:
-        print("please install eunjeon module")
-else:  # Ubuntu일 경우
-    from konlpy.tag import Mecab
-
-from typing import List, Callable, Union, Any, TypeVar, Tuple, Dict
-
-
-def get_tokenizer(tokenizer_name):
-    tokenizer = Mecab()
-    return tokenizer
-
-def get_tokens(sent: List[str], noun=False, tokenizer="mecab") -> List[str]:
-    tokenizer = get_tokenizer(tokenizer)
-    
-    if noun:
-        nouns = tokenizer.nouns(sent)
-        nouns = [word for word in nouns if len(word) > 1]
-        return nouns
-
-    return tokenizer.morphs(sent)
-
-
-# -*- coding: cp949 -*- 
-import platform
-import kss
-import numpy as np
-from functools import partial
-import numpy as np
 from sklearn.preprocessing import normalize
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics import pairwise_distances
