@@ -123,5 +123,7 @@ R = pagerank(mat)
 topk = 3
 idxs = R.argsort()[-topk:]
 #keysents = [(idx, R[idx], sents[idx]) for idx in sorted(idxs)]
-for idx in sorted(idxs):
-    print(sents[idx])
+#for idx in sorted(idxs):
+    #print(sents[idx])
+keysents = [(sents[idx]) for idx in sorted(idxs)]
+print(keysents)
