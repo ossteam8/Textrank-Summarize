@@ -1,10 +1,8 @@
-
 # -*- coding: cp949 -*- 
 import platform
 import kss
 import numpy as np
 from functools import partial
-import numpy as np
 from sklearn.preprocessing import normalize
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics import pairwise_distances
