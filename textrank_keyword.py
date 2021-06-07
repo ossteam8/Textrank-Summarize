@@ -21,7 +21,7 @@ import gensim
 from gensim import corpora
 import kss
 
-with open('µ•¿Ã≈Õ/economy_contents.pickle', 'rb') as f:
+with open('data/politic_contents.pickle', 'rb') as f:
     news = pickle.load(f)
 
 sents = "".join(news)
@@ -43,7 +43,7 @@ for i in text_list :
     
     tl.append(result2)
 
-bigram = gensim.models.Phrases(tl, min_count = 5, threshold = 0.000001)
+bigram = gensim.models.Phrases(tl, min_count = 10, threshold = 0.00001)
 
 bigram_model = gensim.models.phrases.Phraser(bigram)
 
@@ -51,7 +51,6 @@ bigram_document = [bigram_model[nouns] for nouns in tl]
 
 def vectorize_sents(bigram_document = bigram_document, min_count=2, noun=True):
    
-
     vectorizer = CountVectorizer(tokenizer=lambda x: x,lowercase=False)
 
     vec = vectorizer.fit_transform(bigram_document)
@@ -91,7 +90,6 @@ def pagerank(x: np.ndarray, df=0.85, max_iter=50):
    
 
     return R
-
 
 mat,vocab_idx, idx_vocab = word_graph(bigram_document)
 R = pagerank(mat)
