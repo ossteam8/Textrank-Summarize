@@ -2,9 +2,10 @@
 
 **실제 개발이 완성된 코드들은 아래 두 repository에 적용되어 있습니다.**
 
-https://github.com/ossteam8/LDA-TextRank-keyword 
+**Keyword** =>  https://github.com/ossteam8/LDA-TextRank-keyword 
 
-https://github.com/ossteam8/K-news-keyword
+**Completed repository** => https://github.com/ossteam8/K-news-keyword
+
 
 # Textrank_Summarize
 
