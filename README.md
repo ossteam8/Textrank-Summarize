@@ -8,7 +8,7 @@ https://github.com/ossteam8/K-news-keyword
 
 # Textrank_Summarize
 
-## [summarizer_v2.py] (https://github.com/ossteam8/Textrank-Summarize/blob/main/summarizer_v2.py)
+## [summarizer_v2.py](https://github.com/ossteam8/Textrank-Summarize/blob/main/summarizer_v2.py)
 
 TextRank 는 sentence graph를 구축한 뒤, Graph ranking algorithm인 PageRank를 이용하여 핵심 문장을 선택하고 
 
