@@ -21,7 +21,7 @@ import gensim
 from gensim import corpora
 import kss
 
-with open('data/politic_contents.pickle', 'rb') as f:
+with open('data/society_contents.pickle', 'rb') as f:
     news = pickle.load(f)
 
 sents = "".join(news)
