@@ -7,7 +7,7 @@
 **Completed repository** => https://github.com/ossteam8/K-news-keyword
 
 
-standalone
+[standalone code]
 
 [textrank](https://github.com/ossteam8/Textrank-Summarize/blob/develop/textrank_keyword.py)
 
