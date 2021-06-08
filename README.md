@@ -6,9 +6,13 @@
 
 **Completed repository** => https://github.com/ossteam8/K-news-keyword
 
+
 standalone
+
 [textrank](https://github.com/ossteam8/Textrank-Summarize/blob/develop/textrank_keyword.py)
+
 [summarizer_v2.py](https://github.com/ossteam8/Textrank-Summarize/blob/main/summarizer_v2.py)
+
 [preprocessing.ipynb](https://github.com/ossteam8/Textrank-Summarize/blob/main/test_notebook/preprocessing.ipynb)
 
 # Textrank_Summarize
