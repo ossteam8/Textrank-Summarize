@@ -50,7 +50,8 @@ bigram_model = gensim.models.phrases.Phraser(bigram)
 bigram_document = [bigram_model[nouns] for nouns in tl]
 
 def vectorize_sents(bigram_document = bigram_document, min_count=2, noun=True):
-   
+
+    #∫§≈Õ»≠
     vectorizer = CountVectorizer(tokenizer=lambda x: x,lowercase=False)
 
     vec = vectorizer.fit_transform(bigram_document)
@@ -85,6 +86,7 @@ def pagerank(x: np.ndarray, df=0.85, max_iter=50):
     N = np.ones(A.shape[0]) / A.shape[0]
 
     R = np.ones(A.shape[0])
+    
     for _ in range(max_iter):
         R = df * np.matmul(A, R) + (1 - df) * N
    
