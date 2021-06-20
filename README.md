@@ -2,6 +2,7 @@
 이 repositoey는 preprocessing, textrank_keyword, textrank_summarize 를 개발하면서 사용된 **test repository** 이다.
 
 **실제 개발이 완성된 코드들은 아래 두 repository에 적용되어 있다.**
+**이후 업데이트나 추가적인 개발 또한 두 repository에서 실행됩니다.**
 
 **Keyword** =>  https://github.com/ossteam8/LDA-TextRank-keyword 
 
