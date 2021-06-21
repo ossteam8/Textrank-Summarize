@@ -9,6 +9,9 @@
 **Completed repository** => https://github.com/ossteam8/K-news-keyword
 
 
+아래 코드를 통해 textrank_ketword, summary, preprocessing 을 각각 실행시킬 수 있습니다.
+
+
 [standalone code]
 
 [textrank](https://github.com/ossteam8/Textrank-Summarize/blob/develop/textrank_keyword.py)
